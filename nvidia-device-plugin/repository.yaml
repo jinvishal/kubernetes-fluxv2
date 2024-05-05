@@ -1,8 +1,10 @@
+---
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: metrics-server
+  name: nvidia-k8s-device-plugin
   namespace: flux-system
 spec:
   interval: 30m
-  url: https://kubernetes-sigs.github.io/metrics-server/
+  url: https://nvidia.github.io/k8s-device-plugin
+---
